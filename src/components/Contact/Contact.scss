@@ -1,0 +1,155 @@
+@import "../../GlobalScss/Constants.scss";
+
+.ContactConteiner{
+  display: flex;
+  color: $White;
+  font-family: $Lora;
+  // margin-top: 50px;
+  overflow: hidden;
+  position: relative;
+
+
+
+  .GEtinTouchContactConteiner{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: $White;
+    .TextGetinTouch{
+      font-size: $CaptionsFontSize;
+      font-family: $Montserrat;
+    }
+    .TextContact{
+    font-family: $Montserrat;
+    font-size: $HeadinFontSize;
+    font-weight: 600;
+    }
+
+    .Form{
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      margin-top: 10px;
+      font-family: $Lora;
+
+      .TextinputLable{
+
+        color: $White;
+        font-size: $BodyTextFontSize;
+        font-weight: 500;
+        margin-top: 10px;
+      }
+
+      .TextInput{
+        padding: 10px;
+        border: none;
+        outline: none;
+        border-radius: 10px;
+        background-color: rgb(39, 38, 36);
+        // margin-top: 5px;
+        font-size: $CaptionsFontSize;
+        resize: none;
+        transition: background-color 0.1s ;
+       
+      }
+      .TextInput:focus{
+        background-color: white;
+        letter-spacing: 0.7px;
+        
+        
+      }
+      textarea::placeholder{
+        letter-spacing: 0.8px;
+        font-family: $Lora;
+      }
+
+      .SubmitButton{
+        padding: 10px;
+        margin-top: 10px;
+        border: none;
+        outline: none;
+        border-radius: 10px;
+        width: 100px;
+        cursor: pointer;
+        background-color: $White;
+        font-weight: 500;
+      }
+      .SubmitButton:focus{
+        // background-color: white;
+        transition: scale -2s;
+        scale: 0.9;
+        
+      }
+     
+      .SubmitButton:hover{
+        background-color: wheat;
+        letter-spacing: 1px;
+      }
+    }
+  }
+
+  .ErthConteiner{
+    flex: 1;
+  }
+}
+
+@media(max-width: 480px){
+
+  .ContactConteiner{
+    flex-direction: column-reverse;
+  }
+
+  .TextGetinTouch{
+    font-size: $MoCaptionsFontSize!important;
+  }
+  .TextContact{
+  font-size: $MoHeadinFontSize!important;
+  font-weight: 500 !important;
+  }
+  
+  .TextinputLable{
+
+    color: white;
+    font-size: $MoCaptionsFontSize !important;
+    font-weight: 400 !important;
+    margin-top: 10px;
+  }
+  input::placeholder{
+    letter-spacing: 1px;
+    font-size: $MoCaptionsFontSize;
+    
+  }
+  textarea::placeholder{
+    letter-spacing: 1px;
+    font-size: $MoCaptionsFontSize;
+    font-family: $Lora;
+  }
+
+  .SubmitButton{
+    padding: 5px !important;
+    margin-top: 10px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    width: 70px !important;
+    cursor: pointer;
+    background-color: white;
+    font-weight: 500;
+  }
+
+  .ErthCanvas {
+    height: 200px !important;
+  }
+  
+}
+
+@media (min-width: 481px) and (max-width: 768px){
+  .ContactConteiner{
+    flex-direction: column-reverse;
+  }
+  .ErthCanvas {
+    height: 300px !important;
+  }
+
+}

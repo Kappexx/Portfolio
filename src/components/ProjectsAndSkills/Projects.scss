@@ -1,0 +1,125 @@
+@import "../../GlobalScss/Constants.scss";
+
+.Projects{
+  flex: 1;
+  padding: 20px;
+  border-left: 0.5px solid $White;
+  font-family: $Lora;
+
+  line-height: 1.3;
+  max-height: 300px;
+  overflow: scroll;
+  position: relative;
+  scrollbar-width: none;
+  
+ 
+  &::-webkit-scrollbar{
+    display: none;
+  }
+
+  a{
+    text-decoration: none;
+    color: white;
+  }
+  h2{
+    font-family: $Montserrat;
+    // 18px
+    font-size: $HeadinFontSize;
+    color: $NavigationBackgroundColor;
+    font-weight: $Weight;
+    
+  }
+  p{
+    margin-top: 5px;
+  }
+  .Name{
+    font-size: 16px ;
+    margin-top: 15px;
+    
+  }
+  .CurrentStatus{
+    font-size: $CaptionsFontSize;
+    a{
+      color: rgb(130, 225, 53);
+    }
+    
+  }
+  .Description{
+    font-size: $BodyTextFontSize ;
+    
+    
+  }
+  .MoreLess{
+    font-size: $CaptionsFontSize;
+    color: $NavigationBackgroundColor;
+    margin-left: 5px;
+    font-style: italic;
+  }
+  .videoBigining{
+   
+    position: absolute;
+    left: -550px;
+    // video{
+    //   display: none;
+    // }
+  }
+  .VideoRewiev{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 90%;
+    // background-color: rgb(72, 72, 131);
+    padding: 10px;
+    position: absolute;
+    border-radius: 5%;
+    video{
+      position: relative;
+      width: 80%;
+      height: auto;
+      border-radius: 10px;
+    }
+    
+  }
+  .close{
+    width: 20px;
+    height: 20px;
+    
+    text-align: center;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 10px;
+    color: red;
+  }
+  .close:hover{
+    
+    scale: 1.4;
+    transition: all 0.2s;
+  }
+  
+}
+
+@media (max-width: 480px) {
+
+  .Projects{
+    max-height: 200px;
+  
+  }
+  h2{
+    // 16px
+    font-size: $MoHeadinFontSize !important;
+  }
+  .Name{
+    font-size: $MoBodyTextFontSize !important;
+  }
+  
+  .CurrentStatus{
+    // 13 px
+    font-size: $MoCaptionsFontSize !important;
+  }
+  .Description{
+    font-size: $MoBodyTextFontSize !important;
+  }
+}
+

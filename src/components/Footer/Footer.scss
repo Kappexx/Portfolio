@@ -1,0 +1,21 @@
+@import "../../GlobalScss/Constants.scss";
+
+footer {
+  font-family: $Lora;
+  margin-top: 15px;
+  text-align: center;
+  font-size: $CaptionsFontSize;
+  font-style: italic;
+  // background-color: black;
+  .GitLink{
+    cursor: pointer;
+    a:link, a:visited{
+      color: $White;
+      
+    }
+  }
+  .Kappex{
+    margin-top: 10px;
+    color: $NavigationBackgroundColor;
+  }
+}

@@ -1,0 +1,34 @@
+
+// Main Colors
+
+// $White: #FFFFFF;
+$White: rgb(213, 196, 196);
+$Black: #000000;
+
+// Fonts
+$Montserrat : 'Montserrat', sans-serif;
+$Lora : 'Lora', serif;
+
+// font-weight
+$Weight : 600;
+// font sizes
+$HeadinFontSize : 1.1rem;
+$BodyTextFontSize: 0.9rem;
+$CaptionsFontSize: 0.7rem;
+
+// Mobile font size
+$MoHeadinFontSize : 1rem;
+$MoBodyTextFontSize: 0.8rem;
+$MoCaptionsFontSize: 0.6rem;
+
+$NavigationBackgroundColor: #F71515;
+
+// Mixins
+
+@mixin opacity {
+  opacity: 0.5;
+  cursor: pointer;
+  &:hover{
+    opacity: 0.9;
+  }
+}

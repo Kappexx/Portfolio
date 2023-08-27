@@ -1,0 +1,43 @@
+@import "../../GlobalScss/Constants.scss";
+
+.AbouMaindiv{
+  max-width: 500px;
+  line-height: 1.3;
+  transition: opacity 0.1s;
+ 
+  text-align: center;
+
+
+  h1{
+    font-size: $HeadinFontSize;
+    font-weight: $Weight;
+  }
+
+  p{
+    margin-top: 10px;
+    font-family: $Lora;
+  }
+  .Caption{
+    font-size: $CaptionsFontSize;
+    font-style: italic;
+  }
+  .CurrentInterest{
+    font-size: $BodyTextFontSize;
+    text-align: left;
+  }
+  span{
+    color: $NavigationBackgroundColor;
+  }
+}
+
+@media (max-width: 480px){
+  h1{
+    font-size: $MoHeadinFontSize !important;
+  }
+  .Caption{
+    font-size: $MoCaptionsFontSize!important;
+  }
+  .CurrentInterest{
+    font-size: $MoBodyTextFontSize !important;
+  }
+}

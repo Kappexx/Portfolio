@@ -1,0 +1,13 @@
+@import "../../GlobalScss/Constants.scss";
+
+.Burger{
+  cursor: pointer !important;
+
+  #onMobileNav{
+    
+    position: absolute;
+    right: -200px;
+   
+  }
+}
+
