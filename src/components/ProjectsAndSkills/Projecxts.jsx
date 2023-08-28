@@ -56,13 +56,16 @@ const Project = ({id, name, github, video, description, active }) => {
       &nbsp;
       &nbsp;
       <span>
-      <a   onClick={()=>{
-        active && handlecklick(id)
-        
-      }}> 
-      {active? "Video Review": "Working Progress" }
+        {
+          id == 2? <a href="https://gkap.pythonanywhere.com/" target="_blanck"> See Website <OpenInNewIcon fontSize="small"/></a> : <a   onClick={()=>{
+            active && handlecklick(id)
+            
+          }}> 
+          {active? "Video Review": "Working Progress" }
+          
+          </a>
+        }
       
-      </a>
       </span>
      </div>
       <p 

@@ -12,11 +12,11 @@ const Projects_test = [
   },
   {
     id:2,
-    name: "Trailers",
-    github: "#",
-    video: "video link",
-    description: "magna aliqua. Ut enim ad minim veniamo consequat. Duis aute irure dolor in reprehenderit at nulla pariatur. Excepteur sint",
-    active: false
+    name: "Weather App with Todo list",
+    github: "https://github.com/Kappexx/Flask_Notes_db",
+    video: "https://gkap.pythonanywhere.com/",
+    description: "Welcome, you can create, update and delete your Notes...According to the weather, used tools are ( React, Redux, Flask, MySQL )",
+    active: true
     
   },
   {
